@@ -1,0 +1,27 @@
+schema_version: 1
+id: fisco-iva-001
+category: fisco
+difficulty: easy
+question: |
+  Qual è l'aliquota IVA ridotta applicata ai libri (esclusi quelli a contenuto
+  pornografico) venduti in Italia nel 2026?
+ground_truth: "4%"
+must_mention:
+  - "4%"
+  - any_of:
+      - "aliquota minima"
+      - "super-ridotta"
+      - "super ridotta"
+must_not_mention:
+  - "10%"
+  - "22%"
+source:
+  - "DPR 633/72, Tabella A, parte II, n. 18"
+  - "https://www.agenziaentrate.gov.it/portale/web/guest/aliquote-iva"
+last_verified: 2026-04-01
+tags:
+  - iva
+  - libri
+notes: |
+  Aliquota stabile dal 1972; da rivedere se il legislatore introduce
+  modifiche tramite la prossima legge di bilancio.
