@@ -31,7 +31,9 @@ def _load_question(path: Path) -> Question:
     with path.open(encoding="utf-8") as f:
         raw = yaml.safe_load(f)
     if not isinstance(raw, dict):
-        raise DatasetError(f"{path}: top-level YAML node must be a mapping, got {type(raw).__name__}")
+        raise DatasetError(
+            f"{path}: top-level YAML node must be a mapping, got {type(raw).__name__}"
+        )
     return Question.model_validate(raw)
 
 
@@ -79,8 +81,7 @@ def validate_dataset(root: Path) -> list[Question]:
 
     if errors:
         raise DatasetError(
-            f"{len(errors)} validation error(s) in {len(files)} file(s):\n\n"
-            + "\n\n".join(errors),
+            f"{len(errors)} validation error(s) in {len(files)} file(s):\n\n" + "\n\n".join(errors),
         )
 
     return questions
