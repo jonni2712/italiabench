@@ -1,0 +1,22 @@
+schema_version: 1
+id: geografia_pa-capoluoghi-001
+category: geografia_pa
+difficulty: easy
+question: |
+  Qual è il capoluogo della regione Molise?
+ground_truth: "Campobasso"
+must_mention:
+  - "Campobasso"
+must_not_mention:
+  - "Bari"
+  - "Napoli"
+  - "Pescara"
+  - "L'Aquila"
+  - "Potenza"
+source:
+  - "Costituzione della Repubblica Italiana, art. 131 (elenco delle regioni)"
+  - "https://www.istat.it/it/archivio/6789"
+last_verified: 2026-05-15
+tags:
+  - regioni
+  - capoluoghi

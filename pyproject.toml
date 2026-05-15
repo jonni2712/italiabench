@@ -94,6 +94,10 @@ target-version = "py310"
 select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
 ignore = ["E501"]
 
+[tool.ruff.lint.flake8-bugbear]
+# Typer/FastAPI idiomatic call pattern uses these in argument defaults.
+extend-immutable-calls = ["typer.Option", "typer.Argument"]
+
 [tool.black]
 line-length = 100
 target-version = ["py310"]

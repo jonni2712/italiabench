@@ -1,0 +1,21 @@
+schema_version: 1
+id: diritto-costituzione-001
+category: diritto
+difficulty: easy
+question: |
+  Quale diritto fondamentale tutela l'articolo 32 della Costituzione italiana?
+ground_truth: "il diritto alla salute"
+must_mention:
+  - "salute"
+must_not_mention:
+  - "lavoro"
+  - "istruzione"
+  - "voto"
+  - "proprieta"
+source:
+  - "Costituzione della Repubblica Italiana, art. 32"
+  - "https://www.governo.it/it/costituzione-italiana/parte-prima-diritti-e-doveri-dei-cittadini/titolo-ii-rapporti-etico-sociali/2842"
+last_verified: 2026-05-15
+tags:
+  - costituzione
+  - diritti-fondamentali

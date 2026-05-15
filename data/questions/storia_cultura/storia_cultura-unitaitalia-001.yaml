@@ -1,0 +1,23 @@
+schema_version: 1
+id: storia_cultura-unitaitalia-001
+category: storia_cultura
+difficulty: easy
+question: |
+  In che anno è stato proclamato il Regno d'Italia, sancendo formalmente
+  l'Unità d'Italia?
+ground_truth: "1861"
+must_mention:
+  - "1861"
+must_not_mention:
+  - "1860"
+  - "1870"
+  - "1918"
+  - "1946"
+  - "1948"
+source:
+  - "Legge 17 marzo 1861, n. 4671 (proclamazione del Regno d'Italia)"
+  - "https://www.senato.it/3182?atto_principale=2&voce_sommario=12"
+last_verified: 2026-05-15
+tags:
+  - risorgimento
+  - regno-italia

@@ -1,0 +1,26 @@
+schema_version: 1
+id: procedure-spid-001
+category: procedure
+difficulty: medium
+question: |
+  Qual è l'ente pubblico italiano che gestisce e coordina il sistema SPID
+  (Sistema Pubblico di Identità Digitale)?
+ground_truth: "AgID (Agenzia per l'Italia Digitale)"
+must_mention:
+  - any_of:
+      - "AgID"
+      - "Agenzia per l'Italia Digitale"
+must_not_mention:
+  - "AGCOM"
+  - "Garante"
+  - "MISE"
+  - "MIMIT"
+  - "Ministero dell'Interno"
+source:
+  - "D.Lgs. 7 marzo 2005, n. 82 (Codice dell'Amministrazione Digitale), art. 64"
+  - "https://www.agid.gov.it/it/piattaforme/spid"
+last_verified: 2026-05-15
+tags:
+  - spid
+  - identita-digitale
+  - agid
