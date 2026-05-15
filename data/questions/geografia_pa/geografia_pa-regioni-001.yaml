@@ -1,0 +1,23 @@
+schema_version: 1
+id: geografia_pa-regioni-001
+category: geografia_pa
+difficulty: easy
+question: |
+  Quante sono complessivamente le regioni italiane?
+ground_truth: "20"
+must_mention:
+  - any_of:
+      - "20"
+      - "venti"
+must_not_mention:
+  - "18 regioni"
+  - "19 regioni"
+  - "21 regioni"
+  - "22 regioni"
+source:
+  - "Costituzione della Repubblica Italiana, art. 131"
+  - "https://www.istat.it/it/archivio/6789"
+last_verified: 2026-05-15
+tags:
+  - regioni
+  - ordinamento

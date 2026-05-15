@@ -1,0 +1,22 @@
+schema_version: 1
+id: fisco-iva-002
+category: fisco
+difficulty: easy
+question: |
+  Qual è l'aliquota IVA ordinaria attualmente in vigore in Italia?
+ground_truth: "22%"
+must_mention:
+  - any_of:
+      - "22%"
+      - "22 per cento"
+      - "22 percento"
+must_not_mention:
+  - "20%"
+  - "21%"
+source:
+  - "DPR 26 ottobre 1972, n. 633, art. 16"
+  - "https://www.agenziaentrate.gov.it/portale/web/guest/aliquote-iva"
+last_verified: 2026-05-15
+tags:
+  - iva
+  - aliquota-ordinaria

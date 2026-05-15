@@ -1,0 +1,24 @@
+schema_version: 1
+id: procedure-cie-001
+category: procedure
+difficulty: medium
+question: |
+  Per quanti anni è valida la Carta d'Identità Elettronica (CIE) rilasciata
+  in Italia a una persona maggiorenne?
+ground_truth: "10 anni"
+must_mention:
+  - "10"
+must_not_mention:
+  - "20 anni"
+  - "25 anni"
+source:
+  - "Decreto del Ministro dell'Interno 23 dicembre 2015, art. 7"
+  - "https://www.cartaidentita.interno.gov.it/cittadini/"
+last_verified: 2026-05-15
+tags:
+  - cie
+  - identita
+notes: |
+  "3 anni" e "5 anni" (validità per minori sotto/sopra i 3 anni) NON in
+  must_not_mention: sono fatti correlati che il modello può legittimamente
+  citare per completezza.

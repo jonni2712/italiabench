@@ -1,0 +1,19 @@
+schema_version: 1
+id: fisco-iva-003
+category: fisco
+difficulty: easy
+question: |
+  Qual è l'aliquota IVA applicata in Italia al pane?
+ground_truth: "4%"
+must_mention:
+  - "4%"
+must_not_mention:
+  - "10%"
+  - "22%"
+source:
+  - "DPR 26 ottobre 1972, n. 633, Tabella A, parte II, n. 15"
+  - "https://www.agenziaentrate.gov.it/portale/web/guest/aliquote-iva"
+last_verified: 2026-05-15
+tags:
+  - iva
+  - alimentari

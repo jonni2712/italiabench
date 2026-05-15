@@ -1,0 +1,25 @@
+schema_version: 1
+id: geografia_pa-capoluoghi-002
+category: geografia_pa
+difficulty: easy
+question: |
+  Qual è il capoluogo della regione Calabria?
+ground_truth: "Catanzaro"
+must_mention:
+  - "Catanzaro"
+must_not_mention:
+  - "Cosenza"
+  - "Crotone"
+  - "Bari"
+  - "Napoli"
+source:
+  - "Costituzione della Repubblica Italiana, art. 131 (elenco delle regioni)"
+  - "https://www.istat.it/it/archivio/6789"
+last_verified: 2026-05-15
+tags:
+  - regioni
+  - capoluoghi
+notes: |
+  "Reggio Calabria" intenzionalmente NON in must_not_mention: è una città
+  legittima da menzionare (più grande del capoluogo) e citarla non
+  sarebbe un'allucinazione.

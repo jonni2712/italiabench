@@ -1,0 +1,24 @@
+schema_version: 1
+id: diritto-parlamento-001
+category: diritto
+difficulty: medium
+question: |
+  Quanti sono i senatori elettivi del Senato della Repubblica italiana
+  dopo l'entrata in vigore della riforma costituzionale del 2020 sulla
+  riduzione del numero dei parlamentari?
+ground_truth: "200"
+must_mention:
+  - any_of:
+      - "200"
+      - "duecento"
+must_not_mention:
+  - "315"
+  - "trecentoquindici"
+source:
+  - "Legge costituzionale 19 ottobre 2020, n. 1 (riduzione del numero dei parlamentari)"
+  - "Costituzione, art. 57 (testo vigente)"
+  - "https://www.senato.it/4159"
+last_verified: 2026-05-15
+tags:
+  - parlamento
+  - riforma-2020

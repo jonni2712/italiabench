@@ -1,0 +1,23 @@
+schema_version: 1
+id: storia_cultura-letteratura-001
+category: storia_cultura
+difficulty: easy
+question: |
+  Chi è l'autore della Divina Commedia?
+ground_truth: "Dante Alighieri"
+must_mention:
+  - "Dante"
+must_not_mention:
+  - "Petrarca"
+  - "Boccaccio"
+  - "Manzoni"
+  - "Leopardi"
+  - "Ariosto"
+  - "Tasso"
+source:
+  - "Treccani, voce 'Dante Alighieri'"
+  - "https://www.treccani.it/enciclopedia/dante-alighieri/"
+last_verified: 2026-05-15
+tags:
+  - letteratura
+  - dante

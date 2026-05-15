@@ -1,0 +1,21 @@
+schema_version: 1
+id: diritto-costituzione-002
+category: diritto
+difficulty: easy
+question: |
+  Su quale principio l'articolo 1 della Costituzione italiana afferma
+  che è fondata la Repubblica?
+ground_truth: "il lavoro"
+must_mention:
+  - "lavoro"
+must_not_mention:
+  - "proprieta"
+  - "ereditarieta"
+  - "monarchia"
+source:
+  - "Costituzione della Repubblica Italiana, art. 1, comma 1"
+  - "https://www.governo.it/it/costituzione-italiana/principi-fondamentali/2839"
+last_verified: 2026-05-15
+tags:
+  - costituzione
+  - principi-fondamentali

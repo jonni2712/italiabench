@@ -1,0 +1,23 @@
+schema_version: 1
+id: geografia_pa-mari-001
+category: geografia_pa
+difficulty: easy
+question: |
+  Quale mare bagna la città italiana di Trieste?
+ground_truth: "Mare Adriatico"
+must_mention:
+  - "Adriatico"
+must_not_mention:
+  - "Tirreno"
+  - "Ionio"
+  - "Ligure"
+source:
+  - "Annuario statistico italiano - ISTAT"
+  - "https://www.istat.it/it/archivio/annuario-statistico-italiano"
+last_verified: 2026-05-15
+tags:
+  - geografia-fisica
+  - mari
+notes: |
+  "Mediterraneo" non in must_not_mention: l'Adriatico è un bacino del
+  Mediterraneo, e citarlo come tale non sarebbe un errore.

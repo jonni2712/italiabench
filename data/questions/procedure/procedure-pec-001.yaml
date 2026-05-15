@@ -1,0 +1,19 @@
+schema_version: 1
+id: procedure-pec-001
+category: procedure
+difficulty: easy
+question: |
+  Cosa significa l'acronimo PEC nel contesto della comunicazione digitale
+  italiana?
+ground_truth: "Posta Elettronica Certificata"
+must_mention:
+  - "Posta"
+  - "Elettronica"
+  - "Certificata"
+source:
+  - "DPR 11 febbraio 2005, n. 68"
+  - "https://www.agid.gov.it/it/piattaforme/posta-elettronica-certificata"
+last_verified: 2026-05-15
+tags:
+  - pec
+  - comunicazione-digitale

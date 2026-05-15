@@ -1,0 +1,24 @@
+schema_version: 1
+id: storia_cultura-repubblica-001
+category: storia_cultura
+difficulty: easy
+question: |
+  In che anno si è svolto il referendum istituzionale che ha portato alla
+  proclamazione della Repubblica Italiana?
+ground_truth: "1946"
+must_mention:
+  - "1946"
+must_not_mention:
+  - "1944"
+  - "1945"
+  - "1947"
+source:
+  - "Decreto Legislativo Luogotenenziale 16 marzo 1946, n. 98"
+  - "https://www.quirinale.it/page/festa2giugno"
+last_verified: 2026-05-15
+tags:
+  - repubblica
+  - referendum-1946
+notes: |
+  "1948" non in must_not_mention: è l'anno di entrata in vigore della
+  Costituzione, fatto correlato e legittimamente menzionabile.

@@ -1,0 +1,23 @@
+schema_version: 1
+id: diritto-codicecivile-001
+category: diritto
+difficulty: easy
+question: |
+  A quale età si raggiunge la maggiore età in Italia secondo il Codice
+  Civile?
+ground_truth: "18 anni"
+must_mention:
+  - any_of:
+      - "18"
+      - "diciotto"
+must_not_mention:
+  - "16 anni"
+  - "17 anni"
+  - "21 anni"
+source:
+  - "Codice Civile, art. 2"
+  - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:codice.civile:1942-03-16;262"
+last_verified: 2026-05-15
+tags:
+  - codice-civile
+  - capacita

@@ -1,0 +1,19 @@
+schema_version: 1
+id: procedure-iban-001
+category: procedure
+difficulty: medium
+question: |
+  Da quanti caratteri è composto un codice IBAN bancario italiano?
+ground_truth: "27"
+must_mention:
+  - any_of:
+      - "27"
+      - "ventisette"
+source:
+  - "ISO 13616 (struttura IBAN per paese)"
+  - "Banca d'Italia, Glossario - voce IBAN"
+  - "https://www.bancaditalia.it/footer/glossario/"
+last_verified: 2026-05-15
+tags:
+  - iban
+  - bancario

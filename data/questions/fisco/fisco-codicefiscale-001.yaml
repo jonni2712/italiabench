@@ -1,0 +1,22 @@
+schema_version: 1
+id: fisco-codicefiscale-001
+category: fisco
+difficulty: easy
+question: |
+  Da quanti caratteri alfanumerici è composto il codice fiscale italiano
+  rilasciato a una persona fisica?
+ground_truth: "16"
+must_mention:
+  - any_of:
+      - "16"
+      - "sedici"
+must_not_mention:
+  - "11 caratteri"
+  - "13 caratteri"
+  - "20 caratteri"
+source:
+  - "Decreto del Ministero delle Finanze 23 dicembre 1976"
+  - "https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/richiesta-ts_cf/codice-fiscale-cittadini"
+last_verified: 2026-05-15
+tags:
+  - codice-fiscale

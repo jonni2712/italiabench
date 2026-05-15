@@ -1,0 +1,23 @@
+schema_version: 1
+id: storia_cultura-festivita-001
+category: storia_cultura
+difficulty: easy
+question: |
+  In quale data del calendario si celebra in Italia la Festa della
+  Liberazione?
+ground_truth: "25 aprile"
+must_mention:
+  - any_of:
+      - "25 aprile"
+      - "venticinque aprile"
+must_not_mention:
+  - "1 maggio"
+  - "2 giugno"
+  - "4 novembre"
+source:
+  - "Decreto Legislativo Luogotenenziale 22 aprile 1946, n. 185"
+  - "https://www.governo.it/it/articolo/25-aprile-festa-della-liberazione/16783"
+last_verified: 2026-05-15
+tags:
+  - festivita
+  - liberazione
