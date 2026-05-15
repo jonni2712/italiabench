@@ -56,6 +56,9 @@ dev = [
     "black>=24.0",
     "mypy>=1.10",
     "pre-commit>=3.7",
+    # Provider SDKs are only optional at runtime, but we need them in the
+    # dev env so we can import them in tests (mocking the network calls).
+    "anthropic>=0.39",
 ]
 
 [project.urls]
