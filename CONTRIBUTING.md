@@ -36,6 +36,13 @@ A question is accepted only if it satisfies all of the following:
    > being correct. Use `any_of` only for genuinely interchangeable phrases,
    > and never for stylistic preferences.
 
+   > **Don't invite forbidden mentions in the question.** If the question
+   > itself nudges the model toward an exception, a related rate, or a
+   > contrasting fact, the model will helpfully mention it — and trip a
+   > legitimate `must_not_mention`. Phrasing like "(except for X)" or
+   > "compared to Y" is almost always a trap. Keep the question narrow
+   > and ask for one fact.
+
 6. **Difficulty tagged**: `easy`, `medium`, `hard`.
 
 ## Question file format

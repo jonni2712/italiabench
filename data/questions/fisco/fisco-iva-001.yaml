@@ -3,8 +3,7 @@ id: fisco-iva-001
 category: fisco
 difficulty: easy
 question: |
-  Qual è l'aliquota IVA ridotta applicata ai libri (esclusi quelli a contenuto
-  pornografico) venduti in Italia nel 2026?
+  Qual è l'aliquota IVA applicata ai libri in Italia nel 2026?
 ground_truth: "4%"
 must_mention:
   - "4%"
@@ -22,9 +21,13 @@ notes: |
   Aliquota stabile dal 1972; da rivedere se il legislatore introduce
   modifiche tramite la prossima legge di bilancio.
 
-  Design note: il primo run reale (claude-opus-4-7, 2026-05-15) ha
-  prodotto una risposta corretta ("4%" + citazione DPR 633/72) ma
-  non ha usato le denominazioni tecniche "aliquota minima" /
-  "super-ridotta" che erano in un must_mention any_of. Lezione: gli
-  must_mention testano il FATTO (l'aliquota), non la TERMINOLOGIA.
-  L'any_of è stato rimosso; tenere solo "4%" come vincolo.
+  Design history (claude-opus-4-7, 2026-05-15):
+  1. Primo any_of (aliquota minima/super-ridotta) rimosso: la domanda
+     testa il fatto (aliquota), non la terminologia preferita.
+  2. La parentetica "(esclusi quelli a contenuto pornografico)" nel
+     wording originale invitava il modello a citare anche il 22% come
+     contrasto, scattando il must_not_mention. Domanda riformulata
+     senza parentetica.
+  Lezione doppia: must_mention testa il fatto, e la domanda non deve
+  invitare il modello a parlare di rate "vicine" che sono in
+  must_not_mention.
