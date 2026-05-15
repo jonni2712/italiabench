@@ -8,20 +8,23 @@ question: |
 ground_truth: "4%"
 must_mention:
   - "4%"
-  - any_of:
-      - "aliquota minima"
-      - "super-ridotta"
-      - "super ridotta"
 must_not_mention:
   - "10%"
   - "22%"
 source:
   - "DPR 633/72, Tabella A, parte II, n. 18"
   - "https://www.agenziaentrate.gov.it/portale/web/guest/aliquote-iva"
-last_verified: 2026-04-01
+last_verified: 2026-05-15
 tags:
   - iva
   - libri
 notes: |
   Aliquota stabile dal 1972; da rivedere se il legislatore introduce
   modifiche tramite la prossima legge di bilancio.
+
+  Design note: il primo run reale (claude-opus-4-7, 2026-05-15) ha
+  prodotto una risposta corretta ("4%" + citazione DPR 633/72) ma
+  non ha usato le denominazioni tecniche "aliquota minima" /
+  "super-ridotta" che erano in un must_mention any_of. Lezione: gli
+  must_mention testano il FATTO (l'aliquota), non la TERMINOLOGIA.
+  L'any_of è stato rimosso; tenere solo "4%" come vincolo.

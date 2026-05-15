@@ -27,6 +27,15 @@ A question is accepted only if it satisfies all of the following:
    a tax rate), say "as of YYYY" in the question.
 5. **`must_mention` and `must_not_mention` lists**: enough to make scoring
    deterministic without an LLM judge in 80%+ of cases.
+
+   > **Test the fact, not the terminology.** A correct answer that uses a
+   > different (but valid) word for the same concept must still pass.
+   > Example: a question about Italy's reduced VAT rate on books should
+   > require the model to mention `"4%"` — not `"aliquota minima"` or any
+   > other technical label that the model could reasonably skip while still
+   > being correct. Use `any_of` only for genuinely interchangeable phrases,
+   > and never for stylistic preferences.
+
 6. **Difficulty tagged**: `easy`, `medium`, `hard`.
 
 ## Question file format
